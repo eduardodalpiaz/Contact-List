@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact list</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>📇 Contact list</h1>
+
+    <form id="form">
+        <input type="hidden" id="id">
+        <input type="text" id="fullName" placeholder="Name" required autocomplete="off" >
+        <input type="text" id="address" placeholder="Address" required autocomplete="off">
+        <input type="text" id="phone" placeholder="Phone" required autocomplete="off">
+        <input type="text" id="city" placeholder="City" required autocomplete="off">
+        <input type="text" id="country" placeholder="Country" required autocomplete="off">
+        <button type="submit">Save</button>
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>City</th>
+                <th>Country</th>
+                <th>Address</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="list"></tbody>
+    </table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
